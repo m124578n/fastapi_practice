@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import RedirectResponse
 
 from src.dao import UserOrderDAO
-from dependencies import get_user_order_dao
+from src.dependencies import get_user_order_dao
 from src.model import Order, User
 
 router = APIRouter()
